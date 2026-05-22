@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f0f0;
+  color: #222;
+}
+
+/* Header */
+.header {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.header p {
+  display: none;
+}
+
+/* Main layout */
+.main {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Add Project Form */
+.add-project-form {
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.add-project-form h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.add-project-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.add-project-form input,
+.add-project-form textarea {
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  outline: none;
+  font-family: inherit;
+  background: #fff;
+  resize: vertical;
+}
+
+.add-project-form input:focus,
+.add-project-form textarea:focus {
+  border-color: #555;
+}
+
+.add-project-form button {
+  align-self: flex-start;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  background: #fff;
+  color: #222;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-project-form button:hover {
+  background: #eee;
+}
+
+/* Projects container */
+.projects-container {
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Search bar */
+.search-bar {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  outline: none;
+  background: #fff;
+  font-family: inherit;
+}
+
+.search-bar input:focus {
+  border-color: #555;
+}
+
+/* Project list */
+.project-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Project card */
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+
+.project-card:last-child {
+  border-bottom: none;
+}
+
+.project-thumb {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  background: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.project-thumb::before,
+.project-thumb::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 1px;
+  background: #aaa;
+}
+
+.project-thumb::before {
+  transform: rotate(45deg);
+}
+
+.project-thumb::after {
+  transform: rotate(-45deg);
+}
+
+.project-info h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.project-info p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.no-results {
+  text-align: center;
+  color: #888;
+  padding: 2rem;
+}
