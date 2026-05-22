@@ -5,9 +5,9 @@ import AddProjectForm from './components/AddProjectForm';
 import './App.css';
 
 const initialProjects = [
-  { id: 1, title: 'Brand Identity – Bloom Co.', category: 'Branding', description: 'Full brand identity package including logo, color palette, and typography.' },
-  { id: 2, title: 'E-commerce Redesign', category: 'Web', description: 'Redesigned an online store to improve UX and increase conversion rates.' },
-  { id: 3, title: 'Social Campaign – Nomad', category: 'Marketing', description: 'Multi-platform social media campaign for a travel lifestyle brand.' },
+  { id: 1, title: 'The Legend of Zelda: Breath of the Wild', description: 'Open-world adventure where Link explores Hyrule, solves shrines, and battles Calamity Ganon.' },
+  { id: 2, title: 'Super Mario Odyssey', description: 'Mario journeys across diverse kingdoms with his hat companion Cappy to rescue Princess Peach from Bowser.' },
+  { id: 3, title: 'Metroid Prime', description: 'First-person exploration of planet Tallon IV as bounty hunter Samus Aran uncovering a Phazon mystery.' },
 ];
 
 function App() {
